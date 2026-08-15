@@ -1,0 +1,59 @@
+/**
+ * tokens.css
+ * -----------------------------------------
+ * Raw, swappable design-token values (light/dark), namespaced as
+ * `--raw-*` per the established Tailwind v4 compatibility pattern
+ * (avoids circular reference with the @theme block in globals.css).
+ *
+ * BATCH 1 UPDATE: repainted to a deep navy / electric blue / cyan
+ * "premium SaaS" palette per approved direction. Every variable name
+ * that existed before is preserved exactly — only hex values changed
+ * — so every component/inline-style consumer (ReadinessScoreGauge,
+ * SkillGapRadarChart, AtsScoreGauge, CompletenessScoreGauge,
+ * LanguageDonutChart, GAP_SEVERITY_COLORS in constants/index.js)
+ * updates automatically with zero direct edits required.
+ *
+ * One new variable was added: --raw-accent-cyan — a secondary accent
+ * used sparingly (primary button gradient, AI-enhanced badge border).
+ * This is purely additive.
+ */
+
+:root {
+  /* Light mode — clean, blue-accented */
+  --raw-bg-canvas: #f8fafc;
+  --raw-bg-surface: #ffffff;
+  --raw-bg-surface-secondary: #f1f5f9;
+  --raw-border-subtle: #e2e8f0;
+  --raw-border-strong: #cbd5e1;
+  --raw-text-primary: #0f172a;
+  --raw-text-secondary: #475569;
+  --raw-text-tertiary: #94a3b8;
+  --raw-brand-primary: #2563eb;
+  --raw-brand-primary-hover: #1d4ed8;
+  --raw-brand-primary-subtle: #eff6ff;
+  --raw-accent-cyan: #0891b2;
+  --raw-success: #16a34a;
+  --raw-warning: #d97706;
+  --raw-danger: #dc2626;
+  --raw-info: #0891b2;
+}
+
+.dark {
+  /* Dark mode — deep navy / blue-black with electric blue + cyan accents */
+  --raw-bg-canvas: #060a14;
+  --raw-bg-surface: #0d1424;
+  --raw-bg-surface-secondary: #131b2e;
+  --raw-border-subtle: #1e293b;
+  --raw-border-strong: #2d3f5c;
+  --raw-text-primary: #f1f5f9;
+  --raw-text-secondary: #94a3b8;
+  --raw-text-tertiary: #64748b;
+  --raw-brand-primary: #3b82f6;
+  --raw-brand-primary-hover: #60a5fa;
+  --raw-brand-primary-subtle: #132339;
+  --raw-accent-cyan: #22d3ee;
+  --raw-success: #34d399;
+  --raw-warning: #fbbf24;
+  --raw-danger: #f87171;
+  --raw-info: #22d3ee;
+}
